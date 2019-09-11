@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "45970b9f-b3b5-46e3-aef3-6c95bfa6d601",
+		"name": "garage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/garage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cars\": []\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/garage",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"garage"
+					]
+				},
+				"description": "empty\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/garage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cars\": [\n\t\t{\n\t\t\t\"plate\": \"blablabla\"\n\t\t}\t\n\t]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/garage",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"garage"
+					]
+				},
+				"description": "filled"
+			},
+			"response": []
+		}
+	]
+}
